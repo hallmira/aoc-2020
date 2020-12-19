@@ -1,10 +1,14 @@
-class Day15(val input: List<String>) {
+class Day15(val input: List<String>) : DayN {
 
-    fun part1(): Int {
+    override fun tinyInput() = """
+0,3,6
+    """
+
+    override fun part1(): Any {
         return getNumberSpokenAtTurn(2020)
     }
 
-    fun part2(): Int {
+    override fun part2(): Any {
         return getNumberSpokenAtTurn(30000000)
     }
 
