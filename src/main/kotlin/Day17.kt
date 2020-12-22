@@ -4,7 +4,7 @@ class Day17(val input: List<String>) : DayN {
     data class Coordinate(val x: Int, val y: Int, val z: Int, val w: Int)
 
     data class ThreeDimGrid(val grid: MutableMap<Int, MutableMap<Int, MutableMap<Int, MutableMap<Int, Boolean>>>>) {
-        
+
         private fun getOrNull(c: Coordinate): Boolean? {
             return grid[c.w]?.get(c.z)?.get(c.y)?.get(c.x)
         }
