@@ -2,16 +2,20 @@ import org.junit.jupiter.api.Test
 import java.nio.file.Paths
 
 class DayNTest {
-    val n = 21
-    val maker: (List<String>) -> DayN = { input: List<String> -> Day21(input) }
+    val n = 22
+    val maker: (List<String>) -> DayN = { input: List<String> -> Day22(input) }
     val input = Paths.get("src/main/resources/day${n}Input").toFile().readLines(Charsets.UTF_8)
 
     val tinyInput =
         """
-mxmxvkd kfcds sqjhc nhms (contains dairy, fish)
-trh fvjkl sbzzf mxmxvkd (contains dairy)
-sqjhc fvjkl (contains soy)
-sqjhc mxmxvkd sbzzf (contains fish)
+Player 1:
+43
+19
+
+Player 2:
+2
+29
+14
 """.trimIndent().split("\n")
 
     @Test
