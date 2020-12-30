@@ -2,20 +2,32 @@ import org.junit.jupiter.api.Test
 import java.nio.file.Paths
 
 class DayNTest {
-    val n = 22
-    val maker: (List<String>) -> DayN = { input: List<String> -> Day22(input) }
+    val n = 24
+    val maker: (List<String>) -> DayN = { input: List<String> -> Day24(input) }
     val input = Paths.get("src/main/resources/day${n}Input").toFile().readLines(Charsets.UTF_8)
 
     val tinyInput =
         """
-Player 1:
-43
-19
-
-Player 2:
-2
-29
-14
+sesenwnenenewseeswwswswwnenewsewsw
+neeenesenwnwwswnenewnwwsewnenwseswesw
+seswneswswsenwwnwse
+nwnwneseeswswnenewneswwnewseswneseene
+swweswneswnenwsewnwneneseenw
+eesenwseswswnenwswnwnwsewwnwsene
+sewnenenenesenwsewnenwwwse
+wenwwweseeeweswwwnwwe
+wsweesenenewnwwnwsenewsenwwsesesenwne
+neeswseenwwswnwswswnw
+nenwswwsewswnenenewsenwsenwnesesenew
+enewnwewneswsewnwswenweswnenwsenwsw
+sweneswneswneneenwnewenewwneswswnese
+swwesenesewenwneswnwwneseswwne
+enesenwswwswneneswsenwnewswseenwsese
+wnwnesenesenenwwnenwsewesewsesesew
+nenewswnwewswnenesenwnesewesw
+eneswnwswnwsenenwnwnwwseeswneewsenese
+neswnwewnwnwseenwseesewsenwsweewe
+wseweeenwnesenwwwswnew
 """.trimIndent().split("\n")
 
     @Test
